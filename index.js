@@ -18,6 +18,7 @@ const createWindow = () => {
 
   mainWindow.loadURL("https://yamiatem.github.io/React-FriendsChat/");
   mainWindow.setMenu(null);
+  mainWindow.setIcon("favicon.ico");
 };
 
 app.on('ready', createWindow);
