@@ -3,7 +3,7 @@
   "productName": "Friends Chat",
   "version": "1.0.0",
   "description": "My Electron application description",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -18,11 +18,11 @@
       "target": [
         "nsis"
       ],
-      "icon": "favicon.ico"
+      "icon": "src/favicon.ico"
     },
     "nsis": {
-      "installerIcon": "favicon.ico",
-      "uninstallerIcon": "favicon.ico",
+      "installerIcon": "src/favicon.ico",
+      "uninstallerIcon": "src/favicon.ico",
       "uninstallDisplayName": "Friends Chat",
       "oneClick": false,
       "perMachine": true,

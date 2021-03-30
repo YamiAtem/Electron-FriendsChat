@@ -9,6 +9,7 @@ const createWindow = () => {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    icon: "favicon.ico",
     webPreferences: {
       nodeIntegration: false,
       preload: path.join(__dirname, 'preload.js'),
@@ -18,7 +19,6 @@ const createWindow = () => {
 
   mainWindow.loadURL("https://yamiatem.github.io/React-FriendsChat/");
   mainWindow.setMenu(null);
-  mainWindow.setIcon("favicon.ico");
 };
 
 app.on('ready', createWindow);
